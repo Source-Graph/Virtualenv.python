@@ -1,0 +1,7 @@
+---
+- name: Install virtualenv
+  ansible.builtin.dnf:
+    name:
+      - python3-virtualenv
+    state: latest
+  become: true
